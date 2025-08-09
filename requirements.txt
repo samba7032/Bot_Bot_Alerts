@@ -1,0 +1,8 @@
+yfinance
+pandas
+python-telegram-bot
+ta
+httpx
+python-dotenv
+python-dateutil
+pytz
