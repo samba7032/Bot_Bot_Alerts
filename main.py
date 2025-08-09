@@ -18,13 +18,13 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 SYMBOLS_CSV = os.getenv('SYMBOLS_CSV', 'under_100rs_stocks.csv')
 DATA_DAYS = 90
-CHECK_INTERVAL = 300  # 5 minutes (set to 60 for testing)
+CHECK_INTERVAL = 600  # 5 minutes (set to 60 for testing)
 RISK_REWARD_RATIO = 2
 MAX_RETRIES = 2
-TEST_MODE = True  # Set to True for testing during off-hours
+TEST_MODE = False  # Set to True for testing during off-hours
 STALE_DATA_THRESHOLD = 15  # minutes
 MAX_FAILED_SYMBOLS = 50
-BATCH_SIZE = 20
+BATCH_SIZE = 10
 
 # ===== Logging Setup =====
 logging.basicConfig(
