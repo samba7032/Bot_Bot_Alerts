@@ -290,9 +290,9 @@ class StockTradingBot:
                 notes.append("Price < SMA20")
 
             # Generate signal
-            if buy_score >= 5 and buy_score > sell_score:
+            if buy_score >= 3 and buy_score > sell_score:
                 return "BUY", current['price'], notes
-            elif sell_score >= 5 and sell_score > buy_score:
+            elif sell_score >= 3 and sell_score > buy_score:
                 return "SELL", current['price'], notes
             
             return "HOLD", current['price'], ["No strong signal"]
